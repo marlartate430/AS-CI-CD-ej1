@@ -10,8 +10,8 @@ jobs:
       - name: Instalar pytest
         run: pip install pytest
 
-      - name: Probar codigo
-        run: ls
+      - name: Bajar codigo
+        uses: actions/checkout@v7
 
       - name: Probar codigo
         run: pytest test.py
