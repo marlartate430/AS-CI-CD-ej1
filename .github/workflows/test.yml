@@ -1,0 +1,14 @@
+name: Ejercicio_1 Workflow
+
+on: push
+
+jobs:
+  probar_software:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Instalar pytest
+        run: pip install pytest
+
+      - name: Probar codigo
+        run: pytest test.py
