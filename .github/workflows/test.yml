@@ -11,4 +11,7 @@ jobs:
         run: pip install pytest
 
       - name: Probar codigo
-        run: ls && pytest test.py
+        run: ls
+
+      - name: Probar codigo
+        run: pytest test.py
